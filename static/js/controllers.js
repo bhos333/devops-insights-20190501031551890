@@ -29,6 +29,7 @@ ConsoleModule.controller('wcontroller', ['$scope', '$http', '$routeParams', '$ti
         } else if(which === 4) {
             data = $scope.zip4m;
         } 
+        console.log(data);
 
         if(data.length === 5) {
             $http({
