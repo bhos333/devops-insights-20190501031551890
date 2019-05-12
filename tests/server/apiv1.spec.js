@@ -79,10 +79,10 @@
       assert(resMock.send.lastCall.args[0].msg === 'Failed', 'Unexpected response:' + resMock.send.lastCall.args);
     });
 
-    it('with valid zip code', function() {
+    it('with valid city', function() {
       reqMock = {
         query: {
-          zip: 79968
+          zip: 'Hamilton'
         }
       };
 
