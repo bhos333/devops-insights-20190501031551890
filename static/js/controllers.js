@@ -31,7 +31,7 @@ ConsoleModule.controller('wcontroller', ['$scope', '$http', '$routeParams', '$ti
         } 
         console.log(data);
 
-        if(data.length === 5) {
+        if(data.length >= 3) {
             $http({
                 method: "GET",
                 url: '/api/v1/getWeather?zip=' + data
